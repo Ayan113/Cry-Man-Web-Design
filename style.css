@@ -1,0 +1,42 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+body{
+    background-color:black;
+    margin:0;
+    height:100vh;
+    overflow:hidden;
+}
+span{
+    background:url("https://cdn4.iconfinder.com/data/icons/emoji-18/61/2-256.png");
+    background:url("https://cdn3.iconfinder.com/data/icons/emoji-1-4/64/_crying_emoji_sad-256.png");
+    width:100px;
+    height:100px;
+    position:absolute;
+    background-size:cover;
+    left:50%;
+    right:50%;
+    pointer-events:none;
+    top:50%;
+    transform:translate(-50%,50%);
+    animation:animate 6s linear;
+
+}
+@keyframes animate{
+    0%{
+        transform:translate(-50%,-50%);
+        opacity:1;
+        filter:hue-rotate(0); 
+    }
+    100% {
+        transform:translate(-50%,-500%);
+        opacity:0;
+        filter:hue-rotate(820deg);
+    }
+
+
+
+}
